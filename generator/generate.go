@@ -27,7 +27,7 @@ func Generate(c *gin.Context) {
 
 	width, err1 := strconv.Atoi(parts[0])
 	height, err2 := strconv.Atoi(parts[1])
-	if err1 != nil || err2 != nil || width <= 0 || height <= 0 {
+	if err1 != nil || err2 != nil || width <= 0 || height <= 0 || width > 9000 || height > 9000 {
 		c.String(http.StatusBadRequest, "Invalid dimensions.")
 		return
 	}
