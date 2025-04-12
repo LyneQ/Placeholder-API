@@ -46,7 +46,7 @@ si aucune font n'est trouvé sous ce nom, Inter sera utilisé par défaut
 ```
 3) Télécharger des dependence via
 ```shell
-  go mod download`
+  go mod download
 ```
 4) Construire l'app via la commande 
 ```shell
