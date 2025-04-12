@@ -42,8 +42,8 @@ func Generate(c *gin.Context) {
 	//use custom fonts
 	var fontStylePath = "generator/fonts/" + fontStyle + ".ttf"
 	if _, err := os.Stat(fontStylePath); err != nil {
-		panic(err)
-		//fontStylePath = "generator/fonts/Inter.ttf"
+		//panic(err)
+		fontStylePath = "generator/fonts/Inter.ttf"
 	}
 	parsedFontSize, err := strconv.ParseFloat(fontSize, 64)
 	err = dc.LoadFontFace(fontStylePath, parsedFontSize)
