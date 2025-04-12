@@ -30,11 +30,11 @@ GET http://localhost:8080/128x64?label=Hello World !&font_size=18&font_color=a25
 ## 💾 Fonts personnalisées
 
 Par défaut, l’API contient deux polices (Inter et ComicNeuve)
-pour ajouter vos propres fonts glissez-les dans le dossier `generator/fonts`
-elle sera alors disponible sous le paramètre de requête suivant `?font_style=MyNewFont`
-si aucune font n'est trouvé sous ce nom alors Inter sera prise par défaut 
+pour ajouter vos propres fonts glissez-les dans le dossier `generator/fonts`. \
+Elle sera alors disponible sous le paramètre de requête suivant `?font_style=MyNewFont`
+si aucune font n'est trouvé sous ce nom, Inter sera utilisé par défaut 
 > [!WARNING]
-> Le nom du fichier sans l'extention sera utilisé comme valeur
+> Le nom du fichier sans l'extension sera utilisé comme valeur
 ---
 
 ## 👷‍♂️ Installation
