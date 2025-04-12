@@ -39,9 +39,12 @@ si aucune font n'est trouvé sous ce nom alors Inter sera prise par défaut
 
 ## 👷‍♂️ Installation
 
-1) assurez-vous d'avoir go en version *1.24.2* installer 
-2) clonner le repo [Placeholder-api](https://github.com/LyneQ/Placeholder-API)
-3) télécharger des dependence via
+1) Assurez-vous d'avoir go en version *1.24.2* installé 
+2) Clonez le repo [Placeholder-api](https://github.com/LyneQ/Placeholder-API)
+```shell
+    git clone https://github.com/LyneQ/Placeholder-API
+```
+3) Télécharger des dependence via
 ```shell
   go mod download`
 ```
