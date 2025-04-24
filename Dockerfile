@@ -19,4 +19,5 @@ COPY --from=builder /app/placeholder-api /app/placeholder-api
 
 EXPOSE 8080
 CMD ["/app/placeholder-api"]
+COPY ./fonts /app/generator/fonts
 
