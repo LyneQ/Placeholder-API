@@ -11,5 +11,3 @@ services:
     restart: unless-stopped
     environment:
       - GIN_MODE=release  # si tu utilises Gin par ex
-    volumes:
-      - ./fonts:/app/placeholder-api/fonts
