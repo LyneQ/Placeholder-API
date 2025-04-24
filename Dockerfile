@@ -20,6 +20,8 @@ COPY --from=builder /app/placeholder-api /app/placeholder-api
 EXPOSE 8080
 CMD ["/app/placeholder-api"]
 
-RUN mkdir -p /app/placeholder-api/fonts
-COPY generator/fonts /app/placeholder-api/fonts
+RUN if [ -d "/app/placeholder-api" ]; then rm -rf /app/placeholder-api; fi && mkdir -p /app/placeholder-api/fonts
+RUN mkdir -p /app/placeholder-api /app/placeholder-api/fonts
+COPY fonts /app/placeholder-api/fonts
+
 
