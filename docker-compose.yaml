@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  placeholder-api:
+    container_name: placeholder-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8081"
+    restart: unless-stopped
+    environment:
+      - GIN_MODE=release  # si tu utilises Gin par ex
