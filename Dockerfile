@@ -19,3 +19,7 @@ COPY --from=builder /app/placeholder-api /app/placeholder-api
 
 EXPOSE 8080
 CMD ["/app/placeholder-api"]
+
+# Copier les polices dans le répertoire 'generator/fonts' du container
+COPY generator/fonts /app/placeholder-api/fonts
+
